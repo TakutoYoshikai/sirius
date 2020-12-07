@@ -42,7 +42,7 @@ def main():
             parser.print_help()
             return
         encode(args.secret, args.key, args.output)
-    if args.mode == "decode":
+    elif args.mode == "decode":
         if args.data == None or args.key == None or args.output == None:
             parser.print_help()
             return
