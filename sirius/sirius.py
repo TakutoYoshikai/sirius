@@ -1,5 +1,6 @@
 from lina import lina
 import os
+import argparse
 
 def encode(secret_filepath, key_filepath, output_filepath):
     if os.path.getsize(secret_filepath) > os.path.getsize(key_filepath):
