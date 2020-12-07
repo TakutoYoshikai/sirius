@@ -2,9 +2,12 @@ from lina import lina
 import os
 import argparse
 
+class SizeOverError(Exception):
+    pass
+
 def encode(secret_filepath, key_filepath, output_filepath):
     if os.path.getsize(secret_filepath) > os.path.getsize(key_filepath):
-        print("size over")
+        raise SizeOverError("size over")
         return
     secret_file = open(secret_filepath, "rb")
     key_file = open(key_filepath, "rb")
