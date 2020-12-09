@@ -1,5 +1,5 @@
 # sirius
-sirius is an encoder/decoder of data
+sirius is a xor encryption program with any file.
 
 ### Getting Started
 **install**
